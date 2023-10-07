@@ -66,6 +66,6 @@ public class ListTest extends BaseTestSetup {
         System.out.printf("A list on a board with key %s was created%n%n", LIST_ID);
 
         Assert.assertEquals(response.jsonPath().getString("name"), "My first List on an exam board", "List name is not correct");
-        Assert.assertFalse("List ID is empty in the response", response.jsonPath().getString("id").isEmpty(), );
+        Assert.assertFalse("List ID is empty in the response", response.jsonPath().getString("id").isEmpty());
     }
 }
